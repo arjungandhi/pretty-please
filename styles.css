@@ -463,11 +463,11 @@ a, button {
     width: fit-content;    
 }
 
-.pretty.button.rounded{
+.pretty.rounded.button{
     border-radius: 1em;
 }
 
-.pretty.button.icon.circular > i {
+.pretty.icon.circular.button > i {
     width: 2em;
     height: 2em;
     vertical-align: middle;
@@ -475,35 +475,39 @@ a, button {
 
 }
 
-.pretty.button.icon.circular {
+.pretty.icon.circular.button {
     border-radius: 50%;
     padding: 0;
 }
 
-.pretty.button.red{
+.pretty.red.button{
     background-color: var(--red);
 }
 
-.pretty.button.green{
+.pretty.green.button{
     background-color: var(--green);
 }
 
-.pretty.button.light{
+.pretty.accent.button{
+    background-color: var(--accent);
+}
+
+.pretty.light.button{
     color: var(--dark-grey);
     background-color: var(--light-grey);
 }
 
-.pretty.button.dark{
+.pretty.dark.button{
     color: var(--light-grey);
     background-color: var(--dark-grey);
 }
 
-.pretty.button.animated{
+.pretty.animated.button{
     opacity: .8;
     animation: var(--trasition);
 }
 
-.pretty.button.animated:hover{
+.pretty.animated.button:hover{
     opacity: 1;
 }
 
@@ -526,16 +530,16 @@ a, button {
     grid-column: 2;
 }
 
-/*text sizes*/
+/*text*/
 .pretty.text {
     font-size: 1em;
 }
   
-.pretty.mini.text {
+.pretty.smallest.text {
     font-size: 0.4em;
 }
   
-.pretty.tiny.text {
+.pretty.smaller.text {
     font-size: 0.5em;
 }
 
@@ -543,19 +547,48 @@ a, button {
     font-size: 0.75em;
 }
 
-.pretty.large.text {
+.pretty.big.text {
     font-size: 1.5em;
 }
 
-.pretty.big.text {
+.pretty.bigger.text {
     font-size: 2em;
 }
 
-.pretty.huge.text {
+.pretty.biggest.text {
     font-size: 4em;
 }
 
-.pretty.massive.text {
+.pretty.chungus.text {
     font-size: 8em;
 }
 
+/*color*/
+
+.pretty.red.text {
+    color: var(--red);
+}
+
+.pretty.blue.text {
+    color: var(--blue);
+}
+
+.pretty.green.text {
+    color: var(--green);
+}
+
+.pretty.accent.text {
+    color: var(--accent);   
+}
+
+.pretty.light.text {
+    color: var(--light-grey);   
+}
+
+.pretty.dark.text {
+    color: var(--dark-grey);
+}
+
+.pretty.bold.text {
+    font-weight: 700;
+}
