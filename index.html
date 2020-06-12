@@ -5,10 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pretty Please</title>
-    <link rel="stylesheet" href="styles.css">
-
+    <link rel="stylesheet" href="pretty-please.css">
+    <link rel="stylesheet" href="css/styles.css">
     <script src="https://kit.fontawesome.com/42c9c129d2.js" crossorigin="anonymous"></script>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/themes/prism-tomorrow.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/prism.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/autoloader/prism-autoloader.min.js"></script>
+    <script>Prism.plugins.autoloader.languages_path = 'https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/components/'</script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/normalize-whitespace/prism-normalize-whitespace.min.js"></script>
+    <script>Prism.plugins.NormalizeWhitespace.setDefaults({
+            'remove-trailing': true,
+            'remove-indent': true,
+            'left-trim': true,
+            'right-trim': true,
+            /*'break-lines': 80,
+            'indent': 2,
+            'remove-initial-line-feed': false,
+            'tabs-to-spaces': 4,
+            'spaces-to-tabs': 4*/
+        });</script>
 </head>
 
 
@@ -28,46 +45,207 @@
         <div class="pretty container text">
             <h1 id='about'>
                 About
-            </h1>  
-            <p> Listen, trust me I know more than <strong>anyone</strong> that the world doesn't need another CSS framework. But, this isn't for the world. This for me. So with out further ado, I present to you .....</p>
+            </h1>
+            <p> Listen, trust me I know more than <strong>anyone</strong> that the world doesn't need another CSS
+                framework. But, this isn't for the world. This for me. So with out further ado, I present to you .....
+            </p>
             <div class="pretty container center">
                 <div class="pretty text-logo biggest text">Pretty Please</div>
             </div>
             <h2>Why. Would you do this.</h2>
-            <p>I started working with websites and the internet in 2018, and I pretty quickly learned I would rather go hunting through debugging logs for segfaults than ever touch a piece of CSS in my lifetime. But I realized something important just before my senior year of college.</p>
+            <p>I started working with websites and the internet in 2018, and I pretty quickly learned I would rather go
+                hunting through debugging logs for segfaults than ever touch a piece of CSS in my lifetime. But I
+                realized something important just before my senior year of college.</p>
             <div class="pretty container center">
                 <div class="pretty text-logo bigger text">I need money so I can eat.</div>
             </div>
-            <p>Any way after panicking for a few house about various ways to starve myself, I realized the solution was to do what most upcoming college grads do and get a job. Well to get one of those you need a website, resumes are cool, but websites are cooler.</p>
-            <p>Now naturally the first question I asked is how is my website going to look, what are the colors going to and falling down the rabbit hole I realized, I need to get into a fight with my old friend CSS. </p>
+            <p>Any way after panicking for a few house about various ways to starve myself, I realized the solution was
+                to do what most upcoming college grads do and get a job. Well to get one of those you need a website,
+                resumes are cool, but websites are cooler.</p>
+            <p>Now naturally the first question I asked is how is my website going to look, what are the colors going to
+                and falling down the rabbit hole I realized, I need to get into a fight with my old friend CSS. </p>
             <div class="pretty container center">
                 <div class="pretty  bigger red bold text">Put a cartoon here</div>
             </div>
-            <p>When I consulted my UI designer friends all of them said "Use a UI frame work. It'll be easy. You just copy and paste and it'll look great." </p>
-            <p>Now heres the thing. I don't know about about most people, but I have a requirement for building stuff, I want to know why. I dont have it in me to do something with using something with out having at least a rudimentary explanation of how and why it works. So after attempting to use just about every framework under the sun. I decided it was time to go do this the "right way", by starting from scratch and writing my own!</p>
+            <p>When I consulted my UI designer friends all of them said "Use a UI framework. It'll be easy. You just
+                copy and paste and it'll look great." </p>
+            <h3>They Lied.</h3>
+
+            <p>Now here's the thing. I don't know about about most people, but I have a requirement for building stuff,
+                I want to know why. I dont have it in me to do something with using something with out having at least a
+                rudimentary explanation of how and why it works. So after attempting to use just about every framework
+                under the sun. I decided it was time to go do this the "right way", by starting from scratch and writing
+                my own!</p>
+
+            <hr>
+
             <h1 id='getting-started'>Getting Started</h1>
             <p>
-                To really get started all you need to do is include the a link to the css file as a link and it works. This will pull the latest version of pretty please into your project
+                To really get started all you need to do is include the a link to the css file as a link and it works.
+                This will pull the latest version of pretty please into your project
             </p>
             <div class="pretty container center">
                 <div class="pretty red bold big text">css link here</div>
             </div>
             <p>
-                If you want I icons which I highly reccomend, because icons are <em>awesome,</em> you will also need font-awesome you can learn how to access that here: <text class="pretty red text">LINK<text>
+                If you want I icons which I highly reccomend, because icons are <em>awesome,</em> you will also need
+                font-awesome you can learn how to access that here: <text class="pretty red text">LINK<text>
             </p>
 
-            <p> Or if you're lazy like me here's some boilerplate html code and copying and pasting this into to place will just work.</p>
+            <p> Or if you're lazy like me here's some boilerplate html code and copying and pasting this into to place
+                will just work.</p>
             <div class="pretty container center">
                 <div class="pretty red bold big text">Boiler plate</div>
             </div>
+
+            <hr>
+
             <h1 id='features'>
                 Features
-            </h1> 
+            </h1>
+            <p>All classes for this framework require the <code>pretty</code> tag to be in the class, this is to avoid
+                conflicts with other framework and styles. </p>
+
             <h2>Buttons</h2>
+            <p>Butons are incredibly important to any good site buttons for pretty-please are written as follows.</p>
+            <div class="grid-3x3">
+                <button class="pretty button">Button</button>
+                <button class="pretty blue button">Button</button>
+                <button class="pretty red button">Button</button>
+                <button class="pretty green button">Button</button>
+                <button class="pretty dark button">Button</button>
+                <button class="pretty light button">Button</button>
+            </div>
+
+            <p>
+                You can specify one of 5 colors above, the default button is colored using the <code>--accent</code>
+                variable.
+                <br><br>
+                Based on what mode your're in either the light or dark button blends into the background
+            </p>
+
+            <pre>
+                <code class="language-html">  
+                    <script type="prism-html-markup">
+                        <button class="pretty button">Button</button>
+                        <button class="pretty blue button">Button</button>
+                        <button class="pretty red button">Button</button>
+                        <button class="pretty green button">Button</button>
+                        <button class="pretty dark button">Button</button>
+                        <button class="pretty light button">Button</button>
+                    </script>
+                </code>
+            </pre>
+
+
+
+            <div class="grid-3x3">
+                <button class="pretty animated button">Button</button>
+                <button class="pretty animated blue button">Button</button>
+                <button class="pretty animated red button">Button</button>
+                <button class="pretty animated green button">Button</button>
+                <button class="pretty animated dark button">Button</button>
+                <button class="pretty animated light button">Button</button>
+            </div>
+
+            <p>
+                Buttons can be animated.
+            </p>
+
+            <pre>
+                <code class="language-html">  
+                    <script type="prism-html-markup">
+                        <button class="pretty animated button">Button</button>
+                        <button class="pretty animated blue button">Button</button>
+                        <button class="pretty animated red button">Button</button>
+                        <button class="pretty animated green button">Button</button>
+                        <button class="pretty animated dark button">Button</button>
+                        <button class="pretty animated light button">Button</button>
+                    </script>
+                </code>
+            </pre>
+
+            <div class="grid-row">
+                <button class="pretty button"><i class="fas fa-car"></i></button>
+                <button class="pretty icon circular button"><i class="fas fa-car"></i></button>
+            </div>
+
+            <p>
+                Buttons can have font-awesome icons and be circular.
+            </p>
+
+            <pre>
+                    <code class="language-html">  
+                        <script type="prism-html-markup">
+                            <button class="pretty button"><i class="fas fa-car"></i></button>
+                            <button class="pretty icon circular button"><i class="fas fa-car"></i></button>
+                        </script>
+                    </code>
+                </pre>
+
+
+            <div class="grid-row">
+                <button class="pretty smallest button">Button</button>
+                <button class="pretty smaller  button">Button</button>
+                <button class="pretty small button">Button</button>
+                <button class="pretty big button">Button</button>
+                <button class="pretty bigger button">Button</button>
+                <button class="pretty biggest button">Button</button>
+                <button class="pretty chungus button">Button</button>
+            </div>
+
+            <p>
+                Buttons can be different sizes.
+            </p>
+
+            <pre>
+                <code class="language-html">  
+                    <script type="prism-html-markup">
+                        <button class="pretty smallest button">Button</button>
+                        <button class="pretty smaller  button">Button</button>
+                        <button class="pretty small button">Button</button>
+                        <button class="pretty big button">Button</button>
+                        <button class="pretty bigger button">Button</button>
+                        <button class="pretty biggest button">Button</button>
+                        <button class="pretty chungus button">Button</button>          
+                    </script>
+                </code>
+            </pre>
             <h2>Text</h2>
             <h2>Cards</h2>
             <h2>Forms</h2>
             <h2>Code</h2>
+            <p>
+                For code we use <a class="pretty animated link" href="https://prismjs.com/">prism.js</a>. It's a really
+                lightweight library that can render and display just about every programming language you need and many
+                that
+                you don't.
+            </p>
+
+            <p>
+                This is the defaults I like to use.
+            </p>
+            <pre class="language-html">
+                <code>
+                    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/themes/prism-tomorrow.min.css&quot;&gt;
+                    &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/prism.min.js&quot;&gt;&lt;/script&gt;
+                    &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/autoloader/prism-autoloader.min.js&quot;&gt;&lt;/script&gt;
+                    &lt;script&gt;Prism.plugins.autoloader.languages_path = 'https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/components/'&lt;/script&gt;
+                    &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/normalize-whitespace/prism-normalize-whitespace.min.js&quot;&gt;&lt;/script&gt;
+                    &lt;script&gt;Prism.plugins.NormalizeWhitespace.setDefaults({
+                    'remove-trailing': true,
+                    'remove-indent': true,
+                    'left-trim': true,
+                    'right-trim': true,
+                    /*'break-lines': 80,
+                    'indent': 2,
+                    'remove-initial-line-feed': false,
+                    'tabs-to-spaces': 4,
+                    'spaces-to-tabs': 4*/
+                    });&lt;/script&gt;
+                </code>
+            </pre>
+
             <h2>Images</h2>
             <h2>Videos</h2>
             <h2>Menu</h2>
@@ -75,20 +253,39 @@
             <h2>Dropdown</h2>
             <h2>Containers</h2>
             <h2>Grids</h2>
-            <p>Just use CSS Grids man I'm not sitting down and imagining all of your various implementations strats: <text class="pretty red text">LINK<text><p>
+            <p>Just use the native CSS <a class="pretty animated link"
+                    href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout">grid functionality</a>, I'm
+                not
+                sitting down and imagining all of your various implementations requirements, it works well and is easy
+                to
+                learn.</p>
+            <h2>Links</h2>
+            <p><a class="pretty link"> Links</a> are colored using the <code>--link-color</code> variable, they can also
+                be
+                <a class="pretty animated link"> animated</a>.</p>
+            <pre>
+                <code class="language-html">  
+                    <script type="prism-html-markup">
+                        <a class="pretty link"> Links</a>
+                        <a class="pretty animated link"> animated</a>
+                    </script>
+                </code>
+            </pre>
 
-
-
+            <hr>
 
             <h1>Credits</h1>
             <p>
-            Thanks to these cools projects for inspiration / allowing me to "liberate" their code.
+                Thanks to these cools projects for inspiration / allowing me to "liberate" their code.
             <p>
             <div class="pretty container center">
                 <div class="pretty red bold big text">Add Credits.</div>
             </div>
         </div>
     </div>
+
+
+
 </body>
 
 </html>

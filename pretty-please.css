@@ -374,6 +374,7 @@ end normalization
 --accent: var(--blue);
 --background-pop: var(--black);
 --logo-color: var(--medium-grey);
+--link-color: var(--blue);
 /*default transistion*/
 --trasition:all 0.3s ease 0s;
 /*fonts for the website as a whole*/
@@ -460,7 +461,7 @@ a, button {
     padding: .5em 1em;
     border: none;
     border-radius: .5em;
-    width: fit-content;    
+    width: fit-content;   
 }
 
 .pretty.rounded.button{
@@ -509,6 +510,34 @@ a, button {
 
 .pretty.animated.button:hover{
     opacity: 1;
+}
+
+.pretty.smallest.button {
+  font-size: 0.4em;
+}
+
+.pretty.smaller.button {
+  font-size: 0.5em;
+}
+
+.pretty.small.button {
+  font-size: 0.75em;
+}
+
+.pretty.big.button {
+  font-size: 1.5em;
+}
+
+.pretty.bigger.button {
+  font-size: 2em;
+}
+
+.pretty.biggest.button {
+  font-size: 4em;
+}
+
+.pretty.chungus.button {
+  font-size: 8em;
 }
 
 /*containers*/
@@ -591,4 +620,19 @@ a, button {
 
 .pretty.bold.text {
     font-weight: 700;
+}
+
+/*pretty link*/
+.pretty.link{
+    color: var(--link-color);
+    text-decoration: underline;
+}
+
+.pretty.animated.link {
+    opacity: .8;
+    animation: var(--trasition);
+}
+
+.pretty.animated.link:hover {
+    opacity: 1;
 }
