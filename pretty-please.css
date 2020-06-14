@@ -685,3 +685,89 @@ a, button {
       display: none !important;
   }
 }
+
+/*images*/
+.pretty.image{
+  max-width: 100%;
+  width: 240px;
+  height: auto;
+  vertical-align: middle;
+  position: relative;
+}
+
+.pretty.inline.image {
+  display: inline-block;
+}
+
+.pretty.rounded.image {
+  border-radius: 1em;
+}
+
+.pretty.fluid.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.pretty.icon.image {
+  margin-right: .25em;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+}
+
+.pretty.smallest.image {
+  width: 30px;
+  height: auto;
+}
+
+.pretty.smaller.image {
+  width: 60px;
+  height: auto;
+}
+
+.pretty.small.image {
+  width: 120px;
+  height: auto;
+}
+
+.pretty.big.image {
+  width: 480px;
+  height: auto;
+}
+
+.pretty.bigger.image {
+  width: 600px;
+  height: auto;
+}
+
+.pretty.biggest.image {
+  width: 800px;
+  height: auto;
+}
+.pretty.bigger.image {
+  width: 960px;
+  height: auto;
+}
+
+
+/*floting images*/
+
+.pretty.float.left.image {
+  float: left;
+  margin-right: 1em;
+  margin-bottom: 1em;
+}
+
+.pretty.float.right.image {
+  float: right;
+  margin-left: 1em;
+  margin-bottom: 1em;
+}
+
+.pretty.float.center.image {
+  float: center;
+  margin-right: 1em;
+  margin-left: 1em;
+  margin-bottom: 1em;
+}
