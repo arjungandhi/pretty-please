@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Pretty Please</title>
     <link rel="stylesheet" href="pretty-please.css">
     <link rel="stylesheet" href="css/styles.css">
@@ -40,7 +40,7 @@
                 <li><a href="#features">Features</a></li>
             </ul>
         </nav>
-        <button id="darkmode" class="pretty button animated light icon circular"> <i class="far fa-sun"></i></button>
+        <button id="darkmode" class="pretty button transparent icon circular"> <i class="fas fa-lg fa-adjust"></i></button>
     </header>
     <div>
         <div class="pretty container text">
@@ -60,7 +60,7 @@
             <div class="pretty container center">
                 <div class="pretty text-logo bigger text">I need money so I can eat.</div>
             </div>
-            <p>Any way after panicking for a few house about various ways to starve myself, I realized the solution was
+            <p>Anyway after panicking for a few house about various ways to starve myself, I realized the solution was
                 to do what most upcoming college grads do and get a job. Well to get one of those you need a website,
                 resumes are cool, but websites are cooler.</p>
             <p>Now naturally the first question I asked is how is my website going to look, what are the colors going to
@@ -121,11 +121,10 @@
             <p>
                 You can specify one of 5 colors above, the default button is colored using the <code>--accent</code>
                 variable.
-                <br><br>
-                Based on what mode your're in either the light or dark button blends into the background
             </p>
 
-            <pre>
+
+            <pre class="code-fix">
                 <code class="language-html">  
                     <script type="prism-html-markup">
                         <button class="pretty button">Button</button>
@@ -138,7 +137,22 @@
                 </code>
             </pre>
 
+            <div class="grid-row">
+                <button class="pretty transparent button">Button</button>
+            </div>
+            <p>
+                Buttons can be transparent
+            </p>
 
+
+            <pre class="code-fix">
+                <code class="language-html">  
+                    <script type="prism-html-markup">
+                        <button class="pretty transparent button">Button</button>
+                       
+                    </script>
+                </code>
+            </pre>
 
             <div class="grid-3x3">
                 <button class="pretty animated button">Button</button>
@@ -153,7 +167,7 @@
                 Buttons can be animated.
             </p>
 
-            <pre>
+            <pre class="code-fix">
                 <code class="language-html">  
                     <script type="prism-html-markup">
                         <button class="pretty animated button">Button</button>
@@ -175,7 +189,7 @@
                 Buttons can have font-awesome icons and be circular.
             </p>
 
-            <pre>
+            <pre class="code-fix">
                     <code class="language-html">  
                         <script type="prism-html-markup">
                             <button class="pretty button"><i class="fas fa-car"></i></button>
@@ -185,21 +199,22 @@
                 </pre>
 
 
-            <div class="grid-row">
-                <button class="pretty smallest button">Button</button>
-                <button class="pretty smaller  button">Button</button>
-                <button class="pretty small button">Button</button>
-                <button class="pretty big button">Button</button>
-                <button class="pretty bigger button">Button</button>
-                <button class="pretty biggest button">Button</button>
-                <button class="pretty chungus button">Button</button>
-            </div>
+                <div class="grid-row">
+                    <button class="pretty smallest button">Button</button>
+                    <button class="pretty smaller  button">Button</button>
+                    <button class="pretty small button">Button</button>
+                    <button class="pretty big button">Button</button>
+                    <button class="pretty bigger button ">Button</button>
+                    <button class="pretty biggest button mobile-check">Button</button>
+                    <button class="pretty chungus button mobile-check">Button</button>
+                </div>
 
             <p>
-                Buttons can be different sizes.
+                Buttons can be different sizes. To change the size of icon sizes you need to follow <a href=https://fontawesome.com/v4.7.0/examples/ class="pretty link">font-awesome's</a> instructions.
+                <br></br> The two larger buttons use the <code>.mobile-check</code> class to hide as they are just too chungus for tiny mobile screens.
             </p>
 
-            <pre>
+            <pre class="code-fix">
                 <code class="language-html">  
                     <script type="prism-html-markup">
                         <button class="pretty smallest button">Button</button>
@@ -226,13 +241,13 @@
             <p>
                 This is the defaults I like to use.
             </p>
-            <pre class="language-html">
-                <code>
+            <pre class="code-fix">
+                <code class="language-html">
                     &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/themes/prism-tomorrow.min.css&quot;&gt;
                     &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/prism.min.js&quot;&gt;&lt;/script&gt;
                     &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/autoloader/prism-autoloader.min.js&quot;&gt;&lt;/script&gt;
                     &lt;script&gt;Prism.plugins.autoloader.languages_path = 'https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/components/'&lt;/script&gt;
-                    &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/normalize-whitespace/prism-normalize-whitespace.min.js&quot;&gt;&lt;/script&gt;
+                    &lt;class="language-html"script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/normalize-whitespace/prism-normalize-whitespace.min.js&quot;&gt;&lt;/script&gt;
                     &lt;script&gt;Prism.plugins.NormalizeWhitespace.setDefaults({
                     'remove-trailing': true,
                     'remove-indent': true,
@@ -264,7 +279,7 @@
             <p><a class="pretty link"> Links</a> are colored using the <code>--link-color</code> variable, they can also
                 be
                 <a class="pretty animated link"> animated</a>.</p>
-            <pre>
+            <pre class="code-fix">
                 <code class="language-html">  
                     <script type="prism-html-markup">
                         <a class="pretty link"> Links</a>

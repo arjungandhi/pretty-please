@@ -360,14 +360,14 @@ end normalization
 :root{
 /*step one the colors. */
 --white: #ffffff;
---light-grey: #f7fdff;
+--light-grey: #fafafa;
 --red: #ed5565;
 --green: #48fcad;
 --blue: #1785a7;
 --grey: #B3C3C7;
 --medium-grey: #707A7D;
 --dark-grey: #303436;
---black: #181818;
+--black: #252627;
 /*colors to use in the code important when switching from dark to light mode*/
 --background: var(--dark-grey);
 --text: var(--light-grey);
@@ -380,22 +380,21 @@ end normalization
 /*fonts for the website as a whole*/
 font-family: Montserrat, 'Open Sans', sans-serif;
 font-weight: 500;
+font-size: 16px; 
+scroll-behavior: smooth;
 /*color for all text*/
 color: var(--text);
+
 }
 /*light mode color options*/
 [data-theme="light"] {
-    --background: var(--light-grey);
+    --background: var(--white);
     --text: var(--dark-grey);
     --accent: var(--blue);
-    --background-pop: var(--white);
+    --background-pop: var(--light-grey);
     --logo-color: var(--dark-grey)
   }
 
-*{
-    font-size: 16px; 
-    scroll-behavior: smooth;
-}
 
 body {
     background-color: var(--background);
@@ -457,11 +456,16 @@ a, button {
 /*button*/
 .pretty.button{
     color: var(--text);
+    font-weight: bold;
     background-color: var(--accent);
-    padding: .5em 1em;
+    display: inline-block;
+    padding: 0.75em 1.5em;
     border: none;
     border-radius: .5em;
-    width: fit-content;   
+    text-align: center;
+    margin: 0 0.25em 0 0;
+    max-width: 100%;
+    min-width: 0;
 }
 
 .pretty.rounded.button{
@@ -500,7 +504,11 @@ a, button {
 
 .pretty.dark.button{
     color: var(--light-grey);
-    background-color: var(--dark-grey);
+    background-color: var(--black);
+}
+
+.pretty.transparent.button{
+  background-color: transparent;
 }
 
 .pretty.animated.button{
@@ -511,6 +519,7 @@ a, button {
 .pretty.animated.button:hover{
     opacity: 1;
 }
+
 
 .pretty.smallest.button {
   font-size: 0.4em;
@@ -540,24 +549,6 @@ a, button {
   font-size: 8em;
 }
 
-/*containers*/
-.pretty.container {
-    display: grid;
-}
-
-.pretty.container.center {
-    text-align: center;
-    justify-content: center;
-}
-
-.pretty.container.text {
-    text-align: left;
-    grid-template-columns: 1fr 960px 1fr;
-}
-
-.pretty.container.text > *{
-    grid-column: 2;
-}
 
 /*text*/
 .pretty.text {
@@ -635,4 +626,58 @@ a, button {
 
 .pretty.animated.link:hover {
     opacity: 1;
+}
+
+
+/*containers*/
+.pretty.container {
+  display: grid;
+}
+
+/*content adjustment*/
+.pretty.container.center {
+  text-align: center;
+  justify-content: center;
+}
+
+.pretty.container.right {
+  text-align: right;
+  justify-content: right;
+}
+
+.pretty.container.left {
+  text-align: left;
+  justify-content: left;
+}
+
+/*text containers*/
+.pretty.container.text > *{
+  grid-column: 2;
+}
+
+.pretty.container.text {
+  text-align: left;
+  justify-content: left;
+}
+
+
+/*Mobile */
+@media (max-width: 1000px) {
+  .pretty.text.container {
+    grid-template-columns: 1em 1fr 1em;
+  }
+}
+/*tablet and bigger*/
+@media (min-width: 1000px){
+  .pretty.text.container {
+    grid-template-columns: 1fr 960px 1fr;
+  }
+}
+
+
+/*hide if on mobile cause itll be too big*/
+@media screen and (max-width: 1024px) {
+  .pretty.mobile-check {
+      display: none !important;
+  }
 }
