@@ -606,7 +606,7 @@ a, button {
 }
 
 .pretty.dark.text {
-    color: var(--pretty-dark-grey);
+    color: var(--pretty-black);
 }
 
 .pretty.bold.text {

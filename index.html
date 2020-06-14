@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Pretty Please</title>
-    <link rel="stylesheet" href="pretty-please.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="pretty-please.css">
     <script src="js/darkmode.js"></script>
     <script src="https://kit.fontawesome.com/42c9c129d2.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/themes/prism-tomorrow.min.css">
@@ -203,6 +203,7 @@
                     <button class="pretty smallest button">Button</button>
                     <button class="pretty smaller  button">Button</button>
                     <button class="pretty small button">Button</button>
+                    <button class="pretty button">Button</button>
                     <button class="pretty big button">Button</button>
                     <button class="pretty bigger button ">Button</button>
                     <button class="pretty biggest button small-check">Button</button>
@@ -221,6 +222,7 @@
                         <button class="pretty smallest button">Button</button>
                         <button class="pretty smaller  button">Button</button>
                         <button class="pretty small button">Button</button>
+                        <button class="pretty button">Button</button>
                         <button class="pretty big button">Button</button>
                         <button class="pretty bigger button">Button</button>
                         <button class="pretty biggest button small-check">Button</button>
@@ -229,6 +231,76 @@
                 </code>
             </pre>
             <h2>Text</h2>
+            
+            <div class="grid-3x3">
+                <p class="pretty text">Text</p>
+                <p class="pretty red text">Red</p>
+                <p class="pretty blue text">Blue</p>
+                <p class="pretty green text">Green</p>
+                <p class="pretty dark text">Dark</p>
+                <p class="pretty light text">Light</p>
+            </div>
+
+            <p>
+                You can specify one of 5 colors above, the default text is colored using the <code>--text</code> variable.
+            </p>
+
+            <pre class="code-fix">
+                <code class="language-html">  
+                    <script type="prism-html-markup">
+                        <p class="pretty text">Text</p>
+                        <p class="pretty red text">Red</p>
+                        <p class="pretty blue text">Blue</p>
+                        <p class="pretty green text">Green</p>
+                        <p class="pretty dark text">Dark</p>
+                        <p class="pretty light text">Light</p>       
+                    </script>
+                </code>
+            </pre>
+
+            <p>
+                Text can be <text class="pretty blue bold text">bold</text>.
+            </p>
+
+            <pre class="code-fix">
+                <code class="language-html">  
+                    <script type="prism-html-markup">
+                        <text class="pretty blue bold text">Text</text>     
+                    </script>
+                </code>
+            </pre>
+
+
+            <div class="grid-row">
+                    <text class="pretty smallest text">smallest</text>
+                    <text class="pretty smaller  text">smaller</text>
+                    <text class="pretty small text">small</text>
+                    <text class="pretty text">text</text>
+                    <text class="pretty big text">big</text>
+                    <text class="pretty bigger text">bigger</text>
+                    <text class="pretty biggest text ">biggest</text>
+                    <text class="pretty chungus text small-check">chungus</text>
+                </div>
+
+            <p>
+                Text can be different sizes.
+            </p>
+
+            <pre class="code-fix">
+                <code class="language-html">  
+                    <script type="prism-html-markup">
+                        <text class="pretty smallest text">smallest</text>
+                        <text class="pretty smaller  text">smaller</text>
+                        <text class="pretty small text">small</text>
+                        <text class="pretty text">text</text>
+                        <text class="pretty big text">big</text>
+                        <text class="pretty bigger text">bigger</text>
+                        <text class="pretty biggest text ">biggest</text>
+                        <text class="pretty chungus text small-check">chungus</text>      
+                    </script>
+                </code>
+            </pre>
+
             <h2>Cards</h2>
             <h2>Forms</h2>
             <h2>Code</h2>
@@ -293,7 +365,7 @@
 
             <h1>Credits</h1>
             <p>
-                Thanks to these cools projects for inspiration / allowing me to "liberate" their code.
+                Thanks to these cools projects for inspiration.
             <p>
             <div class="pretty container center">
                 <div class="pretty red bold big text">Add Credits.</div>

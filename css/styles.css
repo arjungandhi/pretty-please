@@ -11,6 +11,10 @@
     align-items: center;
 }
 
+.grid-row > * {
+    margin-bottom: 10px !important;
+}
+
 .code-fix {
     margin-bottom: 1em !important;
 }
