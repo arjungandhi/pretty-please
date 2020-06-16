@@ -689,10 +689,14 @@ a, button {
 /*images*/
 .pretty.image{
   max-width: 100%;
-  width: 240px;
-  height: auto;
+  display: inline-block;
   vertical-align: middle;
   position: relative;
+  background-color: transparent;
+}
+
+img.pretty.image{
+  display: block
 }
 
 .pretty.inline.image {
@@ -747,6 +751,11 @@ a, button {
 }
 .pretty.bigger.image {
   width: 960px;
+  height: auto;
+}
+
+.pretty.chungus.image {
+  width: 1200px;
   height: auto;
 }
 
