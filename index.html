@@ -462,16 +462,17 @@
                 </code>
             </pre>
             <div class="pretty container">
-                <img class="pretty medium image float left" src="https://picsum.photos/1000">
-                <img class="pretty medium image float right" src="https://picsum.photos/1000">
+                
+                
                 <p class="pretty text small">
+                    <img class="pretty small image float left" src="https://picsum.photos/1000">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sed nisl cursus, euismod velit
                     sit amet, luctus ipsum. Aliquam sit amet sem et sem auctor consequat vitae sed metus. Integer
                     iaculis lectus a mattis pharetra. Aenean eget pretium odio. Curabitur vitae efficitur velit, ac
                     dictum arcu. Maecenas et erat a augue ultrices malesuada. Nullam gravida nec augue eget bibendum.
                     Duis sit amet mattis dui. Maecenas quis elementum tortor. Nam metus libero, consectetur nec diam et,
                     luctus porttitor lorem. Donec rutrum mollis felis at luctus. Donec blandit varius massa eget rutrum.
-
+                    <img class="pretty small image float right" src="https://picsum.photos/1000">
                     Donec viverra risus sed lorem aliquet, ac accumsan tortor interdum. Pellentesque in nibh quis libero
                     auctor molestie. Sed porttitor, neque eu molestie semper, ante mi blandit libero, at tristique
                     turpis lectus vel lacus. Vestibulum placerat, purus et vehicula pulvinar, libero tellus sollicitudin
@@ -489,8 +490,8 @@
             <pre class="code-fix">
                 <code class="language-html">
                     <script type="prism-html-markup">
-                        <img class="pretty medium image float left" src="https://picsum.photos/1000">
-                        <img class="pretty medium image float right" src="https://picsum.photos/1000">
+                        <img class="pretty small image float left" src="https://picsum.photos/1000">
+                        <img class="pretty small image float right" src="https://picsum.photos/1000">
                 </script>
                 </code>
             </pre>
@@ -498,11 +499,24 @@
             <h2>Videos</h2>
 
             <p>
-                By defualt pretty videos are responsive and take up the full size of their parent container
+                By defualt pretty videos are responsive and take up the full size of their parent container. To use pretty videos surround the embeded iframe with a div. 
             </p>
+
             <div class="pretty video">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/MtN1YnoL46Q" frameborder="0" allow="=encrypted-media;" allowfullscreen></iframe>
             </div>
+
+            <pre class="code-fix">
+                <code class="language-html">
+                    <script type="prism-html-markup">
+                        <div class="pretty video">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/MtN1YnoL46Q" frameborder="0" allow="=encrypted-media;" allowfullscreen></iframe>
+                        </div>
+                </script>
+                </code>
+            </pre>
+
+
 
             <h2>Menu</h2>
             <h2>Sidebar</h2>

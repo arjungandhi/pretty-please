@@ -698,7 +698,6 @@ a, button {
 
 .pretty.inline.image {
   display: inline-block;
-  vertical-align: middle;
 }
 
 .pretty.bottom.inline.image {
@@ -746,7 +745,7 @@ a, button {
 }
 
 .pretty.medium.image {
-  width: 120px;
+  width: 240px;
   height: auto;
 }
 
@@ -806,3 +805,31 @@ div.pretty.video{
   width: 100%;
   height: 100%;
 }
+
+/*scroll bar*/
+/*
+ *  STYLE 2
+ */
+
+::-webkit-scrollbar-track
+ {
+   -webkit-box-shadow: inset 0 0 6px var(--pretty-background-pop);
+   -box-shadow: inset 0 0 6px var(--pretty-background-pop);
+   border-radius: 8px;
+   background-color: transparent;
+ }
+ 
+::-webkit-scrollbar
+ {
+   width: 6px;
+   height: 6px;
+   background-color: transparent;
+ }
+ 
+::-webkit-scrollbar-thumb
+ {
+   border-radius: 8px;
+   -webkit-box-shadow: inset 0 0 6px var(--pretty-background-pop);
+   box-shadow: inset 0 0 6px var(--pretty-background-pop);
+   background-color: var(--pretty-logo-color);
+ }
