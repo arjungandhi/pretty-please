@@ -40,7 +40,8 @@
                 <li><a href="#features">Features</a></li>
             </ul>
         </nav>
-        <button id="darkmode" class="pretty button transparent icon circular"> <i class="fas fa-lg fa-adjust"></i></button>
+        <button id="darkmode" class="pretty button transparent icon circular"> <i
+                class="fas fa-lg fa-adjust"></i></button>
     </header>
     <div>
         <div class="pretty container">
@@ -199,21 +200,24 @@
                 </pre>
 
 
-                <div class="grid-row">
-                    <button class="pretty smallest button">Button</button>
-                    <button class="pretty smaller  button">Button</button>
-                    <button class="pretty small button">Button</button>
-                    <button class="pretty button">Button</button>
-                    <button class="pretty big button">Button</button>
-                    <button class="pretty bigger button ">Button</button>
-                    <button class="pretty biggest button small-check">Button</button>
-                    <button class="pretty chungus button small-check">Button</button>
-                </div>
+            <div class="grid-row">
+                <button class="pretty smallest button">Button</button>
+                <button class="pretty smaller  button">Button</button>
+                <button class="pretty small button">Button</button>
+                <button class="pretty button">Button</button>
+                <button class="pretty big button">Button</button>
+                <button class="pretty bigger button ">Button</button>
+                <button class="pretty biggest button small-check">Button</button>
+                <button class="pretty chungus button small-check">Button</button>
+            </div>
 
             <p>
-                Buttons can be different sizes. To change the size of icon sizes you need to follow <a href=https://fontawesome.com/v4.7.0/examples/ class="pretty link">font-awesome's</a> instructions.
-                <br></br> The two larger buttons use the <code>.small-check</code> class to hide as they are just too chungus for tiny mobile screens.
-                <br></br> If you have dreams of having a mobile site pay attention to the line above I spent <text class="pretty bold red text">3 hours</text> of my life debugging this issue.
+                Buttons can be different sizes. To change the size of icon sizes you need to follow <a
+                    href=https://fontawesome.com/v4.7.0/examples/ class="pretty link">font-awesome's</a> instructions.
+                <br></br> The two larger buttons use the <code>.small-check</code> class to hide as they are just too
+                chungus for tiny mobile screens.
+                <br></br> If you have dreams of having a mobile site pay attention to the line above I spent <text
+                    class="pretty bold red text">3 hours</text> of my life debugging this issue.
             </p>
 
             <pre class="code-fix">
@@ -231,7 +235,7 @@
                 </code>
             </pre>
             <h2>Text</h2>
-            
+
             <div class="grid-3x3">
                 <p class="pretty text">Text</p>
                 <p class="pretty red text">Red</p>
@@ -242,7 +246,8 @@
             </div>
 
             <p>
-                You can specify one of 5 colors above, the default text is colored using the <code>--text</code> variable.
+                You can specify one of 5 colors above, the default text is colored using the <code>--text</code>
+                variable.
             </p>
 
             <pre class="code-fix">
@@ -272,15 +277,15 @@
 
 
             <div class="pretty container center">
-                    <text class="pretty smallest text">smallest</text>
-                    <text class="pretty smaller  text">smaller</text>
-                    <text class="pretty small text">small</text>
-                    <text class="pretty text">text</text>
-                    <text class="pretty big text">big</text>
-                    <text class="pretty bigger text">bigger</text>
-                    <text class="pretty biggest text ">biggest</text>
-                    <text class="pretty chungus text small-check">chungus</text>
-                </div>
+                <text class="pretty smallest text">smallest</text>
+                <text class="pretty smaller  text">smaller</text>
+                <text class="pretty small text">small</text>
+                <text class="pretty text">text</text>
+                <text class="pretty big text">big</text>
+                <text class="pretty bigger text">bigger</text>
+                <text class="pretty biggest text ">biggest</text>
+                <text class="pretty chungus text small-check">chungus</text>
+            </div>
 
             <p>
                 Text can be different sizes.
@@ -336,27 +341,178 @@
             </pre>
 
             <h2>Images</h2>
+            <p>
+                There are lot's of ways to display images, i just implemented what I thought would be most useful.
+            </p>
+
+            <img class="pretty image" src='https://picsum.photos/1000'></img>
+
+            <p>
+                By default all images are displayed as inline-blocks (so the flow the same way text does) and
+                "responsive" they are limited by the max width of
+                their parent container. The image above is trying to be 1000 px but is limited by the contianer. Try
+                resizing your browser window to see it in action!
+            </p>
+
+            <pre class="code-fix">
+                <code class="language-html">
+                    <script type="prism-html-markup">
+                    <img class="pretty image" src='https://picsum.photos/1000'></img>
+                </script>
+                </code>
+            </pre>
+
+
+            <div class="pretty container">
+                <p><img class="pretty inline image" src='https://picsum.photos/100'></img> I am defualt. </p>
+                <p><img class="pretty top inline image" src='https://picsum.photos/100'></img> I am top-aligned. </p>
+                <p><img class="pretty middle inline image" src='https://picsum.photos/100'></img> I am middle-aligned.
+                </p>
+                <p><img class="pretty bottom inline image" src='https://picsum.photos/100'></img> I am bottom-aligned.
+                </p>
+            </div>
+
+            <p>Images can also be inline with text and specify its vertical alignment. </p>
+
+            <pre class="code-fix">
+                <code class="language-html">
+                    <script type="prism-html-markup">
+                        <p><img class="pretty inline image" src='https://picsum.photos/100'></img> I am defualt. </p>
+                        <p><img class="pretty top inline image" src='https://picsum.photos/100'></img> I am top-aligned. </p>
+                        <p><img class="pretty middle inline image" src='https://picsum.photos/100'></img> I am middle-aligned. </p>
+                        <p><img class="pretty bottom inline image" src='https://picsum.photos/100'></img> I am bottom-aligned. </p>
+                </script>
+                </code>
+            </pre>
+
+            <img class="pretty rounded image" src='https://picsum.photos/400'></img>
+
+            <p>
+                Images can have rounded borders
+            </p>
+
+            <pre class="code-fix">
+                <code class="language-html">
+                    <script type="prism-html-markup">
+                    <img class="pretty rounded image" src='https://picsum.photos/400'></img>
+                </script>
+                </code>
+            </pre>
+
+            <img class="pretty fluid image" src='https://picsum.photos/300'></img>
+
+            <p>
+                Images can be fluid and fill their contianer. The one below is only 300 px. (please never actually do
+                this, unless you have a good enough quality image or an svg)
+            </p>
+
+            <pre class="code-fix">
+                <code class="language-html">
+                    <script type="prism-html-markup">
+                    <img class="pretty rounded image" src='https://picsum.photos/300'></img>
+                </script>
+                </code>
+            </pre>
+
+            <p> <img class="pretty inline avatar image" src='https://data.arjungandhi.com/profile.jpg'> Images can also
+                be formated to look like avatars.</p>
+            <pre class="code-fix">
+                <code class="language-html">
+                    <script type="prism-html-markup">
+                        <img class="pretty inline avatar image" src='https://data.arjungandhi.com/profile.jpg'>
+                </script>
+                </code>
+            </pre>
 
 
 
+            <div class="pretty center container">
+                <img class="pretty smallest image" src='https://picsum.photos/1000'></img>
+                <p>30px</p>
+                <img class="pretty smaller image" src='https://picsum.photos/1000'></img>
+                <p>60px</p>
+                <img class="pretty small image" src='https://picsum.photos/1000'></img>
+                <p>120px</p>
+                <img class="pretty medium image" src='https://picsum.photos/1000'></img>
+                <p>240px</p>
+                <img class="pretty big image" src='https://picsum.photos/1000'></img>
+                <p>480px</p>
+                <img class="pretty bigger image" src='https://picsum.photos/1000'></img>
+                <p>600px</p>
+                <img class="pretty biggest image" src='https://picsum.photos/1000'></img>
+                <p>800px</p>
+                <img class="pretty chungus image" src='https://picsum.photos/1000'></img>
+                <p>960px</p>
+            </div>
 
+            <p>Images can be a whole bunch of different sizes. </p>
 
+            <pre class="code-fix">
+                <code class="language-html">
+                    <script type="prism-html-markup">
+                        <p><img class="pretty smallest image" src='https://picsum.photos/1000'></img>30px</p>
+                        <p><img class="pretty smaller image" src='https://picsum.photos/1000'></img>60px</p>
+                        <p><img class="pretty small image" src='https://picsum.photos/1000'></img>120px</p>
+                        <p><img class="pretty medium image" src='https://picsum.photos/1000'></img>240px</p>
+                        <p><img class="pretty big image" src='https://picsum.photos/1000'></img>480px</p>
+                        <p><img class="pretty bigger image" src='https://picsum.photos/1000'></img>600px</p>
+                        <p><img class="pretty biggest image" src='https://picsum.photos/1000'></img>800px</p>
+                        <p><img class="pretty chungus image" src='https://picsum.photos/1000'></img>960px</p>
+                </script>
+                </code>
+            </pre>
+            <div class="pretty container">
+                <img class="pretty medium image float left" src="https://picsum.photos/1000">
+                <img class="pretty medium image float right" src="https://picsum.photos/1000">
+                <p class="pretty text small">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sed nisl cursus, euismod velit
+                    sit amet, luctus ipsum. Aliquam sit amet sem et sem auctor consequat vitae sed metus. Integer
+                    iaculis lectus a mattis pharetra. Aenean eget pretium odio. Curabitur vitae efficitur velit, ac
+                    dictum arcu. Maecenas et erat a augue ultrices malesuada. Nullam gravida nec augue eget bibendum.
+                    Duis sit amet mattis dui. Maecenas quis elementum tortor. Nam metus libero, consectetur nec diam et,
+                    luctus porttitor lorem. Donec rutrum mollis felis at luctus. Donec blandit varius massa eget rutrum.
 
+                    Donec viverra risus sed lorem aliquet, ac accumsan tortor interdum. Pellentesque in nibh quis libero
+                    auctor molestie. Sed porttitor, neque eu molestie semper, ante mi blandit libero, at tristique
+                    turpis lectus vel lacus. Vestibulum placerat, purus et vehicula pulvinar, libero tellus sollicitudin
+                    mi, hendrerit aliquam ante turpis sit amet arcu. Duis eget dictum libero. Donec tristique enim in
+                    metus consectetur, ut tincidunt lacus vestibulum. In ultricies non dui sit amet tristique. Nunc et
+                    porttitor dolor. Morbi vel odio eros. Nunc vel ullamcorper lorem. Integer sit amet lacinia sem, eget
+                    mollis ante. Ut consectetur mauris non rutrum viverra. Cras euismod nisl sed dui luctus blandit.
+                    Phasellus id erat facilisis, suscipit nisi in, vestibulum erat. Sed sed euismod ligula.
+                </p>
 
+            </div>
 
+            <p>Images can float right or left of some content. </p>
+
+            <pre class="code-fix">
+                <code class="language-html">
+                    <script type="prism-html-markup">
+                        <img class="pretty medium image float left" src="https://picsum.photos/1000">
+                        <img class="pretty medium image float right" src="https://picsum.photos/1000">
+                </script>
+                </code>
+            </pre>
 
             <h2>Videos</h2>
+
+            <p>
+                By defualt pretty videos are responsive and take up the full size of their parent container
+            </p>
+            <div class="pretty video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/MtN1YnoL46Q" frameborder="0" allow="=encrypted-media;" allowfullscreen></iframe>
+            </div>
+
             <h2>Menu</h2>
             <h2>Sidebar</h2>
             <h2>Dropdown</h2>
             <h2>Containers</h2>
             <h2>Grids</h2>
             <p>Just use the native CSS <a class="pretty animated link"
-                    href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout">grid functionality</a>, I'm
-                not
-                sitting down and imagining all of your various implementations requirements, it works well and is easy
-                to
-                learn.</p>
+                    href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout">grid functionality</a>,
+                I'm not sitting down and imagining all of your various implementations requirements, it works well and
+                is easy to learn.</p>
             <h2>Links</h2>
             <p><a class="pretty link"> Links</a> are colored using the <code>--link-color</code> variable, they can also
                 be
