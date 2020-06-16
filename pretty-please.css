@@ -831,5 +831,5 @@ div.pretty.video{
    border-radius: 8px;
    -webkit-box-shadow: inset 0 0 6px var(--pretty-background-pop);
    box-shadow: inset 0 0 6px var(--pretty-background-pop);
-   background-color: var(--pretty-logo-color);
+   background-color: var(--pretty-logo-color2);
  }
