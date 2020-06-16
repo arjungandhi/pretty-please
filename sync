@@ -2,5 +2,5 @@
 aws s3 rm --recursive s3://pretty-please.arjungandhi.com
 aws s3 sync . s3://pretty-please.arjungandhi.com --exclude '.git/*' --exclude 'sync'
 
-aws cloudfront create-invalidation --distribution-id=E33TUKXZCT3QFU --paths ./* 
+aws cloudfront create-invalidation --distribution-id=E33TUKXZCT3QFU --paths "/*"
 
