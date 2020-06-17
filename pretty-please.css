@@ -831,3 +831,26 @@ div.pretty.video{
    border-radius: 8px;
    background-color: var(--pretty-logo-color);
  }
+
+
+ /*pretty forms*/
+ input.pretty.input, textarea.pretty.input {
+  max-width: 100%;
+  resize: vertical;
+  padding:.5em;
+  border-radius:.5em;
+  margin: .5em 0;
+  border: 2px solid var(--pretty-text);
+  background-color: transparent;
+  color: var(--pretty-text);
+}
+
+textarea.pretty.input{
+  height:10em
+}
+
+
+.pretty.input::placeholder{ /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: var(--pretty-text);
+  opacity: .5; /* Firefox */
+}

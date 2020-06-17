@@ -67,7 +67,7 @@
             <p>Now naturally the first question I asked is how is my website going to look, what are the colors going to
                 and falling down the rabbit hole I realized, I need to get into a fight with my old friend CSS. </p>
             <div class="pretty container center">
-                <div class="pretty  bigger red bold text">Put a cartoon here</div>
+                <!--Cartoon #TODO-->
             </div>
             <p>When I consulted my UI designer friends all of them said "Use a UI framework. It'll be easy. You just
                 copy and paste and it'll look great." </p>
@@ -83,22 +83,19 @@
 
             <h1 id='getting-started'>Getting Started</h1>
             <p>
-                To really get started all you need to do is include the a link to the css file as a link and it works.
-                This will pull the latest version of pretty please into your project
+                To really get started all you need to do is <a href="https://github.com/arjungandhi/pretty-please" class="pretty link">download</a> the css file and include it in your project. 
             </p>
-            <div class="pretty container center">
-                <div class="pretty red bold big text">css link here</div>
-            </div>
+            <pre class="code-fix">
+                <code class="language-html">  
+                    <script type="prism-html-markup">
+            <link rel="stylesheet" href="pretty-please.css">
+                    </script>
+                    </code>
+                    </pre>
             <p>
-                If you want I icons which I highly reccomend, because icons are <em>awesome,</em> you will also need
-                font-awesome you can learn how to access that here: <text class="pretty red text">LINK<text>
+                If you want icons which of course you do why would you not, because icons are <em>awesome,</em> you will also need
+                <a href="https://fontawesome.com/" class="pretty animated link">font awesome</a>.
             </p>
-
-            <p> Or if you're lazy like me here's some boilerplate html code and copying and pasting this into to place
-                will just work.</p>
-            <div class="pretty container center">
-                <div class="pretty red bold big text">Boiler plate</div>
-            </div>
 
             <hr>
 
@@ -306,8 +303,24 @@
                 </code>
             </pre>
 
-            <h2>Cards</h2>
-            <h2>Forms</h2>
+            <h2>Inputs</h2>
+            <input class="pretty input" type="text" name="firstname" placeholder="name...">
+            <br>
+            <textarea class="pretty input" name="subject" placeholder="message..."></textarea>
+            <p>
+                There is a fairly minimal styling for inputs that outlines them and makes them transparent. 
+            </p>
+            <pre class="code-fix">
+                <code class="language-html">  
+                    <script type="prism-html-markup">
+                        <input class="pretty input" type="text" name="firstname" placeholder="name...">
+                        <br>
+                        <textarea class="pretty input" name="subject" placeholder="message..."></textarea>     
+                    </script>
+                </code>
+            </pre>
+
+            
             <h2>Code</h2>
             <p>
                 For code we use <a class="pretty animated link" href="https://prismjs.com/">prism.js</a>. It's a really
@@ -462,8 +475,8 @@
                 </code>
             </pre>
             <div class="pretty container">
-                
-                
+
+
                 <p class="pretty text small">
                     <img class="pretty small image float left" src="https://picsum.photos/1000">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sed nisl cursus, euismod velit
@@ -499,11 +512,13 @@
             <h2>Videos</h2>
 
             <p>
-                By defualt pretty videos are responsive and take up the full size of their parent container. To use pretty videos surround the embeded iframe with a div. 
+                By defualt pretty videos are responsive and take up the full size of their parent container. To use
+                pretty videos surround the embeded iframe with a div.
             </p>
 
             <div class="pretty video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/MtN1YnoL46Q" frameborder="0" allow="=encrypted-media;" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/MtN1YnoL46Q" frameborder="0"
+                    allow="=encrypted-media;" allowfullscreen></iframe>
             </div>
 
             <pre class="code-fix">
@@ -519,9 +534,17 @@
 
 
             <h2>Menu</h2>
+            <p class="pretty big red text">Coming Soon...</p>
             <h2>Sidebar</h2>
+            <p class="pretty big red text">Coming Soon...</p>
             <h2>Dropdown</h2>
+            <p class="pretty big red text">Coming Soon...</p>
             <h2>Containers</h2>
+            <p class="pretty big red text">It exists but I haven't written the documentation yet...</p>
+            <h2>Cards</h2>
+            <p class="pretty big red text">Coming Soon...</p>
+            <h2>Graphs</h2>
+            <p>Use <a href= "https://d3js.org/" class="pretty animated link">d3.js</a></p>
             <h2>Grids</h2>
             <p>Just use the native CSS <a class="pretty animated link"
                     href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout">grid functionality</a>,
@@ -545,12 +568,22 @@
             <h1>Credits</h1>
             <p>
                 Thanks to these cools projects for inspiration.
-            <p>
-            <div class="pretty container center">
-                <div class="pretty red bold big text">Add Credits.</div>
+            </p>
+            <div class="grid-6">
+                        <a href="https://unnamed.smakosh.com/"><p><img src="https://unnamed.smakosh.com/static/logo-43738d4113c36bbf85ed6ecc875fbd16.svg" class="pretty inline middle smallest image"></img>
+                        Unamed</p></a>
+                        <a href="https://fomantic-ui.com/"><p><img src="https://fomantic-ui.com/images/logo.png" class="pretty inline middle smallest image"></img>
+                            Fomantic UI</p></a>
+                        <a href="https://fontawesome.com/"><p><img src="https://fontawesome.com/images/favicons/favicon-32x32.png" class="pretty inline middle smallest image"></img>
+                            Font Awesome</p></a>
+                        <a href="https://d3js.org/"><p><img src="https://d3js.org/favicon.png" class="pretty inline middle smallest image"></img>
+                            d3.js</p></a>
+                        <a href="https://prismjs.com/"><p><img src="https://prismjs.com/logo.svg" class="pretty inline middle smallest image"></img>
+                            Prism.js</p></a>
             </div>
         </div>
     </div>
+
 
 
 
