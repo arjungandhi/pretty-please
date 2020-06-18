@@ -1,4 +1,4 @@
 # pretty-pls
-A simple dynamic css framework so I can live my life in peace.
+For when normal ugly just ain't doing it. 
 
 https://pretty-please.arjungandhi.com
