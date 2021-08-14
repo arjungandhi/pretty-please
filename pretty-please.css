@@ -1,7 +1,7 @@
 /*importing the font we need*/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
 /*importing the nord color scheme*/
-@import url('https://raw.githubusercontent.com/arcticicestudio/nord/develop/src/nord.css');
+@import url('https://cdn.jsdelivr.net/gh/arcticicestudio/nord@c93f12b/src/nord.css');
 
 /****************************
 start normalizationnavigation.css
